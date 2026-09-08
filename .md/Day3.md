@@ -91,7 +91,7 @@ Agent 是一步一步順著時間在跟環境互動的：S1→A1→S2→A2→S3.
 
 準備一個**記憶庫（Replay Buffer）**，把 Agent 每一步的經驗 (s, a, r, s') 都存進去，訓練時不是用剛發生的那一步，而是從整個記憶庫裡隨機抽一批（mini-batch）出來訓練
 
-![image](https://hackmd.io/_uploads/ryZRw1l_Gl.png)
+![alt text](image-2.png)
 
 ---
 補充 `Target Network`
@@ -104,7 +104,7 @@ Agent 是一步一步順著時間在跟環境互動的：S1→A1→S2→A2→S3.
 |Online Network（線上網路）|平常用來選動作、被訓練更新|	每一步都更新
 |Target Network（目標網路）|	專門用來算 Loss 公式裡的 max(Q(s',·)) 也就是「訓練目標」|	每隔一段時間（例如每 1000 步）才把 Online Network 的權重複製過來，其他時間完全「凍結不動」
 
-![image](https://hackmd.io/_uploads/H1kZc1guMe.png)
+![alt text](image-3.png)
 
 
 
