@@ -37,7 +37,7 @@ MDP（Markov Decision Process，馬可夫決策過程）
 |Policy 策略($π$)|LLM 本人，進行決策|
 
 AI 代理（Agent）或強化學習（RL）的決策與執行流程圖:
-![image](https://hackmd.io/_uploads/r1JilKRwfg.png)
+![alt text](image.png)
 
 
 
