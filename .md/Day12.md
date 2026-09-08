@@ -2,7 +2,7 @@
 
 昨天提到關於Credit Assignment的解法有Process Reward Model跟RLVR，今天我們先來聊聊Process Reward Model~
  
-![image](https://hackmd.io/_uploads/HyfR7PIuGg.png)
+![alt text](image-5.png)
 
 ### Outcome Reward Model（結果獎勵模型，ORM）
 ORM 只評估最終輸出的正確性或品質，不管過程中的細節。它只針對最終輸出打一個分數，整個生成過程只有這一個數字

@@ -43,8 +43,6 @@ RLHF 優化的是「一次性回答」，而Agentic RL 優化的是「一連串�
 缺點：需要針對每個任務類型手動設計檢查點，或額外訓練一個 PRM，成本較高，也可能引入 **reward hacking** 風險
 
 ---
-
----
 ### Takeaway
 - 信用分配問題（Credit Assignment Problem）的本質：稀疏、延遲的結果獎勵，無法告訴模型軌跡中「哪一步」該負責。
 - 在 Agent 的領域，幾乎所有真實世界的任務都是 POMDP
