@@ -8,11 +8,11 @@ DPO直接拿偏好資料（Preference Data）來微調模型。也就是說，�
 ### 偏好資料（Preference Data）
 這邊展示一組，包含prompt、chosen、rejected
 
-![image](https://hackmd.io/_uploads/r1Xh0pwOze.png)
+![alt text](image-18.png)
 
 
 ### 開始 DPOTrainer
-![image](https://hackmd.io/_uploads/B1c7kAwdze.png)
+![alt text](image-19.png)
 
 在做 DPO 時，我們的目標是讓模型學會分辨好壞。但如果我們只給模型這個目標，它非常容易發生Reward Hacking、Policy collapse。
 我們需要 beta 這個超參數，讓模型不要走火入魔，此參數用來控制Agent 模型在學習新偏好時，能跑離原本的Reference Model多遠。
@@ -30,18 +30,15 @@ DPO直接拿偏好資料（Preference Data）來微調模型。也就是說，�
 
 ---
 #### 實驗結果
-![image](https://hackmd.io/_uploads/HJv81RD_Mx.png)
+![alt text](image-20.png)
 
 看到這條線隨著訓練步數穩步上升。代表模型越來越傾向產生正確呼叫工具的文本。
 
-![image](https://hackmd.io/_uploads/HyOskCDdGx.png)
+![alt text](image-21.png)
 這是 Chosen 和 Rejected 兩者的差值。我們可以看到這條線呈現非常漂亮的上升趨勢。Margin 穩定變大，就代表模型成功學會了分辨對錯！ 
 
 硬體資源用量:
-![image](https://hackmd.io/_uploads/Hyee1eRP_Me.png)
-
-
-https://github.com/crazyainfuture/AI-Agent-RL/tree/master/DPO
+![alt text](image-22.png)
 
 這份數據證明了：Agent 成功建立起了正確的偏好，它現在已經能清楚分辨出什麼是好的工具呼叫策略了！
 

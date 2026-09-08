@@ -15,7 +15,7 @@
 #### 分析訓練日誌
 查看 **Loss & Reward** 指標：Reward 穩定上升，看似一切順利
 
-![image](https://hackmd.io/_uploads/Hy4ILpP_ze.png)
+![alt text](image-16.png)
 
 看著 Reward 曲線不斷攀升，以為 Agent 變得很聰明時，打開 Log 卻看到了崩潰的畫面
 

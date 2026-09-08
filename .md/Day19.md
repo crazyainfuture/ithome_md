@@ -21,9 +21,7 @@ Reward Function 修改策略:
 這套reward function設計成「格式正確 → 結構合法 → 行為合理 → 任務完成」的獎勵階梯。其中，格式與 JSON 只提供少量獎勵，而正確答案或正確工具選擇才是主要獎勵來源。透過讓「格式對但內容錯」的結果低於 0 分，可以避免模型為了追求容易取得的格式分而放棄真正解題，進一步降低 Reward Hacking 所造成的策略崩潰。
 
 #### 實驗結果
-![image](https://hackmd.io/_uploads/r18iiTwdGl.png)
-
-https://github.com/crazyainfuture/AI-Agent-RL/tree/master/ppo_reward_hacking
+![alt text](image-17.png)
 
 ---
 ### Takeaway
