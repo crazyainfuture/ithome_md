@@ -10,7 +10,7 @@
 ---
 以下是我們將agent 輸出錯誤的用人工修正功能修正，並將原本失敗的軌跡打包成 rejected，修正過的軌跡打包成 chosen，並把這筆偏好資料加入訓練集。
 
-![image](https://hackmd.io/_uploads/H1s_luqdGx.png)
+![alt text](image-34.png)
 
 這樣維護人員就可以直接在監控介面完成錯誤抓取與標註，省去在伺服器終端機翻找 Log 的痛苦!
 
