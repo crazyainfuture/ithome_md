@@ -54,8 +54,6 @@ LLM是只有文字輸入與輸出的純大腦。它沒有連網能力、也不�
 實作結果
 ![alt text](image-9.png)
 
-https://github.com/crazyainfuture/AI-Agent-RL/tree/master/agent_project
-
 ---
 ### Takeaway
 - 建立環境

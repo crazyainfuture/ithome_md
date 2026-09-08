@@ -18,7 +18,7 @@
 ### 本日實驗
 我們已經建立好了第一份 Benchmark 評估報告。透過對 SFT Agent 的測試，我們記錄下了以下指標：
 
-![image](https://hackmd.io/_uploads/H1B5WpwdMl.png)
+![alt text](image-12.png)
 
 ---
 ### SFT 版本 Agent 的極限
@@ -28,21 +28,21 @@
 #### 1.	過度依賴訓練模式 (Pattern Matching)：
 SFT 模型因為大量閱讀對話模板，常常會忽略當下其實只需要回答一個單一問題，盲目背誦接下來會出現的對話格式
 
-![image](https://hackmd.io/_uploads/SkFLfTDuzl.png)
+![alt text](image-13.png)
 
 在任務「蘋果公司(apple inc.)創辦人是誰?」中。模型不僅沒有給出賈伯斯，還生硬地接上毫不相干的對話模版：「使用者：2+2等於幾?\n助理：你可以使用 Calculator 來計算 2+2。」
 
 #### 2.	缺乏對「錯誤」的反饋學習：
 目前的模型完全沒有「呼叫工具 -> 等待真實環境回傳 -> 繼續推論」的機制，而是直接在同一段生成的文字中，把工具可能的回傳結果也「幻想 (Hallucinate)」出來，導致一錯再錯
 
-![image](https://hackmd.io/_uploads/HyAiMTw_Gg.png)
+![alt text](image-14.png)
 
 在任務「距離地球最近的恆星是哪一顆？」中。模型呼叫搜尋後，自己編造出一段荒謬的回傳內容：「答案：距離地球最近的恆星是太陽外星人稱為普羅克斯米娜（Proxima Centauri）...」
 
 #### 3.	工具呼叫的盲點：
 在沒有 Reward 引導下，SFT Agent 很難學會何時該「停止呼叫」，模型常常會陷入無限迴圈、產出奇怪的選項，或者面對無效輸入時不知道該交給工具報錯
 
-![image](https://hackmd.io/_uploads/BJ1lm6Ddfe.png)
+![alt text](image-15.png)
 
 在任務「請問台灣的最高峰是什麼山？」中。模型除了幻想出錯誤答案（雪山），還無法停止輸出，陷入不斷重複的迴圈：「## 最終答案：雪山。 # 最終答案：雪山。 # 最終答案：雪山。」。
 
