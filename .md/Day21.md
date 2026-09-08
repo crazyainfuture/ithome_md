@@ -10,9 +10,9 @@
 
 在經歷了前幾個 Epoch 的迷惘與扣分後，模型在 Epoch 6 處理算術題時，它成功輸出了 `<final_answer>100</final_answer>` 成功拿到了 10.0 的最高獎勵！ 
 
-![image](https://hackmd.io/_uploads/H12_WCPuzx.png)
+![alt text](image-23.png)
 
-![image](https://hackmd.io/_uploads/rJHKbCDufx.png)
+![alt text](image-24.png)
 
 與此同時，天氣題的表現卻很不順利
 
@@ -20,14 +20,14 @@
 
 到了Epoch 12 開始模型徹底壞掉了，他開始忘記要使用 `<final_answer>` 或 `<tool_call>` 標籤或是毫無意義地瘋狂重複。所以Reward只拿到-1.0。
 
-![image](https://hackmd.io/_uploads/ry46WRvdMl.png)
+![alt text](image-25.png)
 
 ---
 ### 為什麼會發生「策略崩潰」？
 在 PPO 訓練中，如果獎勵的起伏太大（例如這題拿 +10 分，下一題卻拿 -1 分），或者學習率（Learning Rate）設定太高，模型在反向傳播更新權重時，步子邁得太大，就會不小心破壞掉它原本預先訓練好的語言能力。
 
 #### KL 散度（KL Divergence）爆炸
-![image](https://hackmd.io/_uploads/BkaZz0DuMg.png)
+![alt text](image-26.png)
 
 從日誌中可以看到，KL 值從 Epoch 1 的 0.0000 一路狂飆到 Epoch 20 的 7.4250，而 Reward 卻沒有穩定上升，甚至在最後幾個 Epoch 呈現負值。
 
