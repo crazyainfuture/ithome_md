@@ -14,7 +14,7 @@
 https://github.com/crazyainfuture/AI-Agent-RL/tree/master/PPO_clip_exp
 
 #### 實驗結果分析 
-![image](https://hackmd.io/_uploads/SJ-chczufg.png)
+![alt text](image-4.png)
 
 1.	Clip = 0.2 (綠線)：這條線通常會最平穩且最快達到滿分 (500 分)。這是因為 0.2 允許模型有足夠的進步空間，又不會因為更新太大而把學到的好策略搞壞。
 2.	Clip = 0.05 (藍線)：學習速度會明顯偏慢。因為即使它發現了一個很好的新策略，Clip 機制也會強迫它只能「一小步一小步」地更新，導致需要更多的 timestep 才能收斂。

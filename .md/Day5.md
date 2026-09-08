@@ -109,4 +109,4 @@ ${\hat{A}}_{t}={\delta }_{t}=r_{t}+\gamma V\left(s_{t+1}\right)-V\left(s_{t}\rig
 ---
 `TD Error`
 
-TD Error（δ）公式：\delta =r+\gamma V\left(s^{\prime }\right)-V\left(s\right)代表「實際結果」與「原本預期」的落差。
+TD Error（δ）公式：$\delta =r+\gamma V\left(s^{\prime }\right)-V\left(s\right)$ 代表「實際結果」與「原本預期」的落差。
