@@ -13,7 +13,7 @@ Example：OpenAI 賽艇實驗 https://openai.com/index/faulty-reward-functions/
 
 ---
 ### Reward Hacking小實驗
-![image](https://hackmd.io/_uploads/SkvZYDLdfg.png)
+![alt text](image-6.png)
 
 獎勵函數是：
 - 每一步都給 +1
@@ -31,12 +31,9 @@ Agent 會把「存活」與「持續獲得獎勵」當成一種有利行為。�
 - 撞牆時給 -5
 - 成功抵達終點時給 +10
 
-![image](https://hackmd.io/_uploads/HkS2FDL_Ml.png)
+![alt text](image-7.png)
 
 原本的 Agent 會把「存活」與「持續獲得獎勵」當成有利行為，寧可繞來繞去、避免終止以獲取更多中間獎勵。加入了「向左 -1」與「撞牆 -5」的設計後，Agent 只要做出遠離目標或無意義的碰撞，就會立刻面臨扣分代價。Agent 不只看重最終結果，還學會了規避錯誤行為。
-
-https://github.com/crazyainfuture/AI-Agent-RL/tree/master/Reward_Hacking_exp
-
 
 ---
 ### Takeaway

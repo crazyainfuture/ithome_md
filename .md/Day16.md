@@ -11,7 +11,7 @@ LLM本身只是一顆沒有手腳的「純大腦」，它無法上網查資料�
 
 ---
 實作
-![image](https://hackmd.io/_uploads/Hy23JTDOGg.png)
+![alt text](image-10.png)
 實作兩個小工具: calculator 與 search
 - calculator_tool(expression)：簡易計算機，直接計算算式
 - search_tool(query)：模擬搜尋引擎，根據關鍵字回傳簡短知識
@@ -48,11 +48,11 @@ LLM是只有文字輸入與輸出的純大腦。它沒有連網能力、也不�
 ---
 `例子`
 
-![image](https://hackmd.io/_uploads/Syiqphw_fe.png)
+![alt text](image-8.png)
 
 ---
 實作結果
-![image](https://hackmd.io/_uploads/BkuB0nDuGl.png)
+![alt text](image-9.png)
 
 https://github.com/crazyainfuture/AI-Agent-RL/tree/master/agent_project
 
